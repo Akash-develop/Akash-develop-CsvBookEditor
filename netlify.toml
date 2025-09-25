@@ -1,6 +1,9 @@
 [build]
-  command = "npm run export"
-  publish = "out"
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/next"
 
 [build.environment]
-  NODE_VERSION = "18.20.4"
+  NODE_VERSION = "18"
