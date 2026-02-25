@@ -234,8 +234,8 @@ export default function Home() {
               <div className="mb-6 p-4 bg-gray-50 rounded-lg">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                   <div className="flex gap-6 text-sm text-gray-600">
-                    <span>Total Records: {books.length}</span>
-                    <span>Filtered Records: {processedBooks.length}</span>
+                    <span>Total: {books.length}</span>
+                    <span>Filtered: {processedBooks.length}</span>
                     <span>Modified Rows: {modifiedRows.size}</span>
                     <span>Showing: {currentBooks.length} of {processedBooks.length}</span>
                   </div>
