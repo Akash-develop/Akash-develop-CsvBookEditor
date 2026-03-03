@@ -216,17 +216,17 @@ export default function Home() {
                 </button>
               </div>
               <button onClick={handleGenerateData} className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium">
-                Generate Sample Data (10K books)
+                Generate Sample Data
               </button>
             </div>
           </div>
 
-          {loading && (
+  
             <div className="text-center py-8">
               <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
               <p className="mt-2 text-gray-600">Loading...</p>
             </div>
-          )}
+ 
 
           {books.length > 0 && !loading && (
             <>
