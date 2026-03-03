@@ -216,7 +216,7 @@ export default function Home() {
                 </button>
               </div>
               <button onClick={handleGenerateData} className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium">
-                Generate Sample Data (10K books)
+                Generate Sample Data
               </button>
             </div>
           </div>
@@ -234,8 +234,8 @@ export default function Home() {
               <div className="mb-6 p-4 bg-gray-50 rounded-lg">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                   <div className="flex gap-6 text-sm text-gray-600">
-                    <span>Total Records: {books.length}</span>
-                    <span>Filtered Records: {processedBooks.length}</span>
+                    <span>Total: {books.length}</span>
+                    <span>Filtered: {processedBooks.length}</span>
                     <span>Modified Rows: {modifiedRows.size}</span>
                     <span>Showing: {currentBooks.length} of {processedBooks.length}</span>
                   </div>
