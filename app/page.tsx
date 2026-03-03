@@ -241,7 +241,7 @@ export default function Home() {
                   </div>
                   <div className="flex gap-2">
                     <button onClick={handleResetEdits} disabled={modifiedRows.size === 0} className="bg-yellow-600 hover:bg-yellow-700 disabled:bg-gray-400 text-white px-4 py-2 rounded-lg font-medium text-sm">
-                      Reset All Edits
+                      Reset All
                     </button>
                     <button onClick={handleDownloadExcel} className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium text-sm">
                       Download CSV
@@ -254,10 +254,10 @@ export default function Home() {
               <div className="mb-6 p-4 bg-gray-50 rounded-lg">
                 <h3 className="text-lg font-medium text-gray-900 mb-4">Filters</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                  <input type="text" placeholder="Filter by Title" value={filters.title} onChange={(e) => setFilters(prev => ({ ...prev, title: e.target.value }))} className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
-                  <input type="text" placeholder="Filter by Author" value={filters.author} onChange={(e) => setFilters(prev => ({ ...prev, author: e.target.value }))} className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
-                  <input type="text" placeholder="Filter by Genre" value={filters.genre} onChange={(e) => setFilters(prev => ({ ...prev, genre: e.target.value }))} className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
-                  <input type="text" placeholder="Filter by Year" value={filters.year} onChange={(e) => setFilters(prev => ({ ...prev, year: e.target.value }))} className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                  <input type="text Title" placeholder="Filter by Title" value={filters.title} onChange={(e) => setFilters(prev => ({ ...prev, title: e.target.value }))} className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                  <input type="text Author" placeholder="Filter by Author" value={filters.author} onChange={(e) => setFilters(prev => ({ ...prev, author: e.target.value }))} className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                  <input type="text Genre" placeholder="Filter by Genre" value={filters.genre} onChange={(e) => setFilters(prev => ({ ...prev, genre: e.target.value }))} className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+                  <input type="text Year" placeholder="Filter by Year" value={filters.year} onChange={(e) => setFilters(prev => ({ ...prev, year: e.target.value }))} className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
                 </div>
               </div>
 
