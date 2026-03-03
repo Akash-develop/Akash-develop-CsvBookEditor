@@ -241,10 +241,10 @@ export default function Home() {
                   </div>
                   <div className="flex gap-2">
                     <button onClick={handleResetEdits} disabled={modifiedRows.size === 0} className="bg-yellow-600 hover:bg-yellow-700 disabled:bg-gray-400 text-white px-4 py-2 rounded-lg font-medium text-sm">
-                      Reset All
+                      Reset
                     </button>
                     <button onClick={handleDownloadExcel} className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium text-sm">
-                      Download CSV
+                      Download
                     </button>
                   </div>
                 </div>
